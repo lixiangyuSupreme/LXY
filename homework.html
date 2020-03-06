@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>表单</title>
+    <style>
+        legend {
+            color: red;
+        }
+        
+        span {
+            color: red;
+        }
+        
+        fieldset {
+            width: 320px;
+        }
+        
+        .tijiao {
+            width: 308px;
+            height: 30px;
+            background-color: rgb(221, 221, 221);
+        }
+        
+        input {
+            width: 300px;
+            height: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>学生信息</h1>
+    <fieldset>
+        <legend>学生档案</legend>
+        <form>
+            姓名：
+            <input type="text" name="name1" required placeholder="请输入姓名"><span>*</span> 学号：
+            <input type="number" name="name2" required placeholder="请输入学号"><span>*</span> 手机号码：
+            <input type="tel" name="name3" required placeholder="请输入手机号码"><span>*</span> 邮箱地址：
+            <input type="email" name="name4" required placeholder="请输入邮箱地址"><span>*</span> 录取学校：
+            <input type="text" name="name5" list="school">
+            <datalist id="school">
+                <option value="河北师范大学"/>
+                <option value="河北大学"/>
+                <option value="河北科技大学"/>
+            </datalist> 入学成绩：
+            <input type="number" name="name6"> 入学时间：
+            <input type="date" name="name7">
+            <input class="tijiao" type="submit">
+        </form>
+    </fieldset>
+</body>
+
+</html>
